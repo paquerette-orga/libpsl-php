@@ -1,6 +1,23 @@
 # libpsl-php
 Library to integrate PSL test in PHP
 
+# How to use it ?
+
+- Clone the repo or download one of the releases available : `git clone https://github.com/frju365/libpsl-php.git`
+- Include the `psl-inspector.php` file in your file. Add at the top of your file for example : `require("libpsl-php/psl-inspector.php");`
+- Use class CheckTLD() like I did in `test/test1` and others
+
+# Why I can use it ?
+
+You can have multiple usages : 
+- Check a mail adress (just replace host by the adress you want to check)
+- Check is the TLD of a host is a TLD.
+- Check if a host has a PSL prefix (Future release)
+
+# Version
+
+0.1Beta
+
 # Credit and license
 
 Libpsl has the +goal to provide an integration library for PSL in
