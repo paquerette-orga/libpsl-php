@@ -6,11 +6,11 @@
 class Mail extends CheckTLD
 {
 
-  function __construct(argument)
+  function __construct($Addr)
   {
     // code...
   }
-  private function CheckAddre() {
+  private function CheckAddress() {
 
   }
 }

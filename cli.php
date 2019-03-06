@@ -14,6 +14,5 @@ class CLI
   }
 }
 
-$cli_run = new CLI();
-
 ?>
+
