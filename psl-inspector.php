@@ -41,12 +41,12 @@ class CheckTLD
 
     $UD = explode("@", $Addr);
 
-    if (sizeof($UD) != 2) $verify = 1;
-
-
-    // unset first part
-    unset($UD[0]);
-    $Levels = explode(".", $UD[1]);
+    if (sizeof($UD) != 2) {
+      $UD = explode(".", $Addr);
+    }
+    if (sizeof($UD) != 2) {
+      echo "Error";
+    }
 
     // Split the domain into at least 2 parts
     $Domain = explode(".", $UD[1]);
