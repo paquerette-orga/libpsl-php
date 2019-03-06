@@ -12,7 +12,7 @@ Library to integrate PSL test in PHP
 You can have multiple usages : 
 - Check a mail adress (just replace host by the adress you want to check)
 - Check is the TLD of a host is a TLD.
-- Check if a host has a PSL prefix (Future release)
+- Check if a host has a PSL prefix
 
 # Version
 
