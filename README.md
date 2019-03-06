@@ -5,6 +5,7 @@ Library to integrate PSL test in PHP
 
 Libpsl has the +goal to provide an integration library for PSL in
 PHP.
+
 Copyright (C) 2019  Gomes Dias Julien
 
 This program is free software: you can redistribute it and/or modify
