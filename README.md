@@ -20,7 +20,7 @@ You can have multiple usages :
 
 # Credit and license
 
-Libpsl has the +goal to provide an integration library for PSL in
+Libpsl has the goal to provide an integration library for PSL in
 PHP.
 
 Copyright (C) 2019  Gomes Dias Julien
