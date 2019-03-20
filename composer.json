@@ -1,0 +1,24 @@
+{
+    "name": "frju365/libpsl-php",
+    "type": "library",
+    "description": "Check a domain name extension and adress using PSL",
+    "keywords": ["dns","mail","port"],
+    "homepage": "https://github.com/frju365/libpsl-php",
+    "license": "GPL-3",
+    "authors": [
+        {
+            "name": "Gomes Dias Julien",
+            "email": "abld@abld.info",
+            "homepage": "https://frju365.yunohost.support",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0"
+    },
+    "autoload": {
+        "psr-0": {
+            "libpsl-php": "src/"
+        }
+    }
+}
