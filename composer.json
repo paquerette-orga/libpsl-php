@@ -5,6 +5,7 @@
     "keywords": ["dns","mail","port"],
     "homepage": "https://github.com/frju365/libpsl-php",
     "license": "GPL-3.0-or-later",
+    "version": "0.3-beta",
     "authors": [
         {
             "name": "Gomes Dias Julien",
