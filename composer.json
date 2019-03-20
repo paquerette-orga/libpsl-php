@@ -4,7 +4,7 @@
     "description": "Check a domain name extension and adress using PSL",
     "keywords": ["dns","mail","port"],
     "homepage": "https://github.com/frju365/libpsl-php",
-    "license": "GPL-3",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Gomes Dias Julien",
