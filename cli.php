@@ -14,5 +14,12 @@ class CLI
   }
 }
 
+function main() {
+
+}
+
+main();
+
+
 ?>
 

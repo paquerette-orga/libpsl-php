@@ -5,7 +5,11 @@ Library to integrate PSL test in PHP
 
 - Clone the repo or download one of the releases available : `git clone https://github.com/frju365/libpsl-php.git`
 - Include the `psl-inspector.php` file in your file. Add at the top of your file for example : `require("libpsl-php/psl-inspector.php");`
-- Use class CheckTLD() like I did in `test/test1` and others
+- Use class `CheckTLD()` like I did in `test/test1` and others.
+
+## With Composer
+
+Use `composer require libpsl-php/libpsl-php`. 
 
 # Why I can use it ?
 
@@ -16,7 +20,7 @@ You can have multiple usages :
 
 # Version
 
-0.1Beta
+0.3-beta
 
 # Credit and license
 
