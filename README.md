@@ -9,7 +9,7 @@ Library to integrate PSL test in PHP
 
 ## With Composer
 
-Use `composer require libpsl-php/libpsl-php`. 
+Use `composer require frju365/libpsl-php`. 
 
 # Why I can use it ?
 
