@@ -1,7 +1,8 @@
 # libpsl-php
+
 Library to integrate PSL test in PHP
 
-# How to use it ?
+## How to use it?
 
 - Clone the repo or download one of the releases available : `git clone https://github.com/frju365/libpsl-php.git`
 - Include the `psl-inspector.php` file in your file. Add at the top of your file for example : `require("libpsl-php/psl-inspector.php");`
@@ -9,20 +10,21 @@ Library to integrate PSL test in PHP
 
 ## With Composer
 
-Use `composer require frju365/libpsl-php`. 
+Use `composer require frju365/libpsl-php`.
 
-# Why I can use it ?
+## Why I can use it?
 
-You can have multiple usages : 
+You can have multiple usages :
+
 - Check a mail adress (just replace host by the adress you want to check)
 - Check is the TLD of a host is a TLD.
 - Check if a host has a PSL prefix
 
-# Version
+## Version
 
 0.3-beta
 
-# Credit and license
+## Credit and license
 
 Libpsl has the goal to provide an integration library for PSL in
 PHP.
