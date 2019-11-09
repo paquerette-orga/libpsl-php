@@ -19,18 +19,33 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 // See LICENSE file for more informations.
 
-class CheckTLD
+namespace PSL;
+use \PSL\Interfaces\PSLInterface\PSLInterface;
+
+class PSL implements PSLInterface
 {
   private $psl_file;
   private $host;
 
+  /**
+   * __construct (initialisé avec les arguments suivants)
+   *
+   * @param  string $psl_file
+   * @param  string $host
+   *
+   */
   public function __construct($psl_file, $host = "")
   {
     $this->psl_file = $psl_file;
     $this->host = $host;
   }
 
-  private function getPSLfile()
+  /**
+   * Get the PSL file
+   *
+   * @return string $fichier (Content of the file)
+   */
+  private function getPSLfile(): string
   {
     $psl_file = $this->psl_file;
     $fichier = file_get_contents($psl_file);
@@ -38,7 +53,13 @@ class CheckTLD
   }
 
 
-  public function CheckTLD()
+	/**
+	 * Main function of the library : Check if the TLD of a domain or mail adress is in PSL Database.
+	 *
+	 * @return int (0 if tld is in the PSP DB; 1 if not)
+	 * or
+	 */
+  public function check(): int
   {
     $psl_file = $this->getPSLfile();
     $host = $this->host;
@@ -64,7 +85,7 @@ class CheckTLD
     //$Domain = explode(".", $UD[$size - 1]);
     $sLevels = sizeof($Domain);
     if ($sLevels < 1) $verify = 1;
-    
+
     // Get the TLD, strip off trailing ] } ) > and check the length
 
     $tld = $Domain[$sLevels - 1];
@@ -88,15 +109,7 @@ class CheckTLD
       $pverify = 1;
     }
 
-    if($verify == 0) {
-      echo "TLD has been checked and is a valid host (BY TLD)";
-    }
-    else {
-      echo "Host provided has not a valid TLD";
-    }
-    if($pverify == 0) {
-      echo "\nHost is in the Prefix List";
-    }
-  }  
+    return $pverify;
+  }
 }
  

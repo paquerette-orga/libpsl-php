@@ -8,18 +8,25 @@
     "version": "0.3-beta",
     "authors": [
         {
-            "name": "Gomes Dias Julien",
+            "name": "Julien Gomes Dias",
             "email": "abld@abld.info",
-            "homepage": "https://frju365.yunohost.support",
             "role": "Developer"
         }
     ],
     "require": {
-        "php": ">=7.0.0"
+        "php": "^7.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.3"
     },
     "autoload": {
         "psr-0": {
-            "libpsl-php": "src/"
+            "PSL\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "PSL\\Test\\": "test/"
         }
     }
 }

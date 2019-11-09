@@ -19,11 +19,9 @@
 // along with this program.  If not, see <https://www.gnu.org/licenses/>.
 // See LICENSE file for more informations.
 
-require("psl-inspector.php");
+use \PSL\PSL;
 
 $psl_file = "test/test.dat";
-$psl_test = new CheckTLD($psl_file, "lio@test.noho.st");
+$psl_test = new PSL($psl_file, "lio@test.noho.st");
 
-$hello = $psl_test->CheckTLD();
-
-?>
+$hello = $psl_test->check();
