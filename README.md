@@ -1,5 +1,7 @@
 # libpsl-php
 
+![PHP Composer](https://github.com/paquerette-orga/libpsl-php/workflows/PHP%20Composer/badge.svg)
+
 Library to integrate PSL test in PHP
 
 ## How to use it?
